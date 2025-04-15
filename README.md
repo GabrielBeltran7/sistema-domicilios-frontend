@@ -32,6 +32,8 @@ https://github.com/GabrielBeltran7/sistema-domicilios-frontend
    `http://localhost:3000` (o el puerto correspondiente donde se esté ejecutando el backend).
 4. Es importante tener el backend ejecutándose en paralelo para que el sistema funcione correctamente.
 
+Dato adicional..
+ Deje todos los 3 componentes en el home. para ver el ciclo de la pagina en tiempo real....
 ---
 
 
