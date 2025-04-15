@@ -10,7 +10,7 @@ import { db } from '../config/firebase.config';
 export const addSector = (sector: Sector) => {
   return async (dispatch: AppDispatch) => {
     try {
-      const response = await axios.post('http://localhost:3000/api/sectors', sector);
+      const response = await axios.post('https://sistema-domicilios-frontend.vercel.app/api/sectors', sector);
      dispatch({
         type: GET_SECTORS,
         payload: response.data.sectors,
@@ -27,7 +27,7 @@ export const addSector = (sector: Sector) => {
 export const getSectors = () => {
   return async (dispatch: AppDispatch) => {
     try {
-      const response = await axios.get('http://localhost:3000/api/sectors');
+      const response = await axios.get('https://sistema-domicilios-frontend.vercel.app/api/sectors');
      
       const sectors = response.data.sectors;  
 
