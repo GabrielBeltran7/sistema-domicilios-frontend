@@ -1,0 +1,141 @@
+.formContainer {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif;
+  animation: fadeIn 0.5s ease;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.label {
+  display: block;
+  margin-bottom: 1.2rem;
+  color: #34495e;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.input {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  margin-top: 0.3rem;
+  border: 1px solid #dcdde1;
+  border-radius: 5px;
+  background: #f9f9f9;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-size: 1rem;
+}
+
+.input:focus {
+  border-color: #3498db;
+  outline: none;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.timeInputs {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.timeSeparator {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.submitButton {
+  width: 100%;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-sizing: border-box;
+}
+
+.submitButton:hover {
+  background: linear-gradient(135deg, #2980b9, #2471a3);
+}
+
+.submitButton:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.errorText {
+  margin-top: 0.25rem;
+  color: #e74c3c;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* 🔽 Responsive Styles */
+@media (max-width: 768px) {
+  .formContainer {
+    padding: 1.5rem 1rem;
+    margin: 2rem 1rem;
+    border-radius: 2px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .label {
+    font-size: 0.9rem;
+  }
+
+  .input {
+    padding: 0.65rem 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  .timeInputs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .timeSeparator {
+    display: none;
+  }
+
+  .submitButton {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+}
+
